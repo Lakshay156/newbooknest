@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: booknest
+    env: docker
+    region: oregon
+    plan: free
+    dockerCommand: ""
+    envVars:
+      - key: DB_HOST
+        value: "" # Fill this in the Render dashboard
+      - key: DB_USER
+        value: "" # Fill this in the Render dashboard
+      - key: DB_PASS
+        value: "" # Fill this in the Render dashboard
+      - key: DB_NAME
+        value: "booknest"
